@@ -1,0 +1,521 @@
+@font-face {
+    font-family: GE SS UltraLight;
+    src: url('../fonts/GE SS Text UltraLight.otf');
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900);
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../fonts/mono/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/mono/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/MonoSocialIconsFont-1.10.woff') format('woff'), url('../fonts/mono/MonoSocialIconsFont-1.10.ttf') format('truetype'), url('../fonts/mono/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/mono/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.symbol,
+a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+.symbol {
+    font-size: 50px;
+    color: #fff;
+}
+a {
+    color: #1e3c72;
+}
+a:hover {
+    text-decoration: none;
+    color: red
+}
+a:focus {
+    text-decoration: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: #1e3c72;
+    font-family: Raleway, sans-serif;
+}
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+.c {
+    text-align: center;
+}
+li a:active,
+li a:focus {
+    color: red;
+}
+/*-------------------- linear-gradient*/
+
+header,
+.blockquote,
+.social {
+    background: #1A2980;
+    background: -webkit-linear-gradient(to left, #1A2980, #26D0CE);
+    background: -webkit-linear-gradient(right, #1A2980, #26D0CE);
+    background: linear-gradient(to left, #1A2980, #26D0CE);
+    /*background: #7b4397;
+  background: -webkit-linear-gradient(to left, #7b4397 , #dc2430);
+  background: linear-gradient(to left, #7b4397 , #dc2430); */
+    /*background: #DC2424;
+  background: -webkit-linear-gradient(to left, #DC2424 , #4A569D);
+  background: linear-gradient(to left, #DC2424 , #4A569D);*/
+}
+/*-------------------- btn*/
+
+.btn_new {
+    padding: 12px 34px;
+    border: 2px solid #1e3c72;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.btn_new:hover {
+    color: #fff;
+    background-color: #1e3c72;
+}
+/*-------------------- thumbnail*/
+
+.thumbnail {
+    background-color: transparent;
+    border: none;
+}
+/*-------------------- header*/
+
+header {
+    height: 750px;
+    color: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.img_right {
+    position: absoulte;
+    bottom: 0;
+    right: 0
+}
+.text_left {
+    padding-top: 25%;
+}
+/*--------------------font*/
+
+.f1 {
+    font-size: 14px;
+}
+.f2 {
+    font-size: 24px;
+}
+.f3 {
+    font-size: 34px;
+}
+.f4 {
+    font-size: 45px;
+}
+.f5 {
+    font-size: 56px;
+}
+.f6 {
+    font-size: 112px;
+}
+.fboldr {
+    font-weight: 700;
+}
+.fbold {
+    font-weight: 500;
+}
+p {
+    line-height: 30px;
+}
+/*-------------------- nav*/
+
+.nav {
+    /*margin-top: 40px;*/
+
+    height: 100px;
+    line-height: 100px;
+}
+.nav_fixed {
+    height: 110px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    line-height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 555;
+    box-shadow: 0px 10px 32px -12px rgba(0, 0, 0, 0.34);
+}
+.navi ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 15px
+}
+.navi ul {
+    display: inline;
+}
+/*-------------------- portfolio*/
+
+.portfolio {
+    margin-top: 100px;
+}
+.portfolio p {
+    padding-bottom: 30px;
+}
+.portfolio img {}
+/*blockquote*/
+
+.blockquote {
+    color: #fff;
+    padding: 20px 0px;
+}
+blockquote {
+    list-style-type: none;
+    border: none;
+}
+blockquote:before {
+    content: "\201C";
+    position: right;
+    font-size: 70px;
+}
+blockquote:after {
+    content: "\201D";
+    position: left;
+    font-size: 70px;
+}
+/*-------------------- about me*/
+
+.about_me {
+    text-align: left;
+    padding: 20px 0px;
+}
+.about_me p {
+    padding-bottom: 30px;
+}
+.about_me ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 34px;
+    margin: 10px;
+    border: 1px solid #8493a7;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #636363;
+}
+.about_me ul li:hover {
+    color: #fff;
+    background-color: #1e3c72;
+}
+/*-------------------- social*/
+
+.social_line {
+    padding: 40px;
+}
+.social_text {
+    color: #fff;
+}
+/*-------------------- blog*/
+
+.blog_text {
+    padding: 20px 0px;
+}
+.blog_text p {
+    padding-bottom: 30px;
+}
+.blog_text img {}
+/*more_top*/
+
+.btn_section {
+    margin-top: 40px;
+}
+.btn_more_top {
+    width: 160px;
+    height: 50px;
+    border: 2px solid #1e3c72;
+    border-radius: 25px;
+    margin: 20px;
+}
+.btn_more {
+    background-color: #1e3c72;
+}
+.btn_more a {
+    color: #fff;
+}
+.btn_top {
+    background-color: #fff;
+}
+.btn_top a {
+    color: #1e3c72;
+}
+/*-------------------- insta*/
+
+.insta {
+    margin-top: 1%;
+}
+.insta_item {
+    position: relative;
+}
+.insta_caption {
+    position: absolute;
+    top: 0;
+    left: 14px;
+    right: 14px;
+    bottom: 0;
+    opacity: 0;
+}
+.insta_caption:hover {
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+.insta_caption {
+    text-align: center;
+    color: #fff;
+    background: rgba(30, 60, 114, 0.8);
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    overflow: hidden;
+}
+.insta_caption p {
+    font-weight: 500;
+    padding-top: 5px;
+    opacity: 0.5;
+    padding-bottom: 30%;
+}
+.insta_img {
+    background-color: #1e3c72;
+}
+.insta .fa {
+    font-size: 40px;
+    padding-top: 80%;
+    opacity: 0.5;
+}
+.insta_btn {
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #1e3c72;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.5;
+    text-decoration: none;
+}
+.insta_btn:hover {
+    color: #1e3c72;
+    border: 1px solid #fff;
+    background-color: #fff;
+    text-decoration: none;
+}
+.dotClass {
+    background-color: #1E3C72
+}
+/*-------------------- footer*/
+
+footer {
+    margin: 20px 0px;
+    padding: 50px 0px;
+}
+.footer_copy {
+    float: left;
+}
+.social_icons li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    font-size: 15px;
+}
+.footer_links {
+    float: right;
+}
+/*model*/
+
+.modal-footer,
+.modal-header {
+    border: none;
+}
+.modal label {
+    font-size: 14px;
+    font-weight: 500;
+}
+.modal {
+    z-index: 99999;
+    background: rgba(30, 60, 114, 0.8);
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+.modal input,
+.modal textarea {
+    background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    border-radius: 3px;
+    box-shadow: none;
+}
+.modal-footer {
+    padding: 0px 47px 0px 47px;
+    margin-bottom: 40px;
+}
+.modal-body {
+    padding: 47px;
+}
+#result {
+    text-align: center;
+    font-size: 17px;
+    padding: 5px 0px 30px 0px;
+}
+.modal-content {
+    border-radius: 10px;
+}
+.send {
+    background-color: #1e3c72;
+    color: #fff;
+}
+/*-------------------- mobile*/
+
+@media only screen and (max-width: 993px) {
+    .text_left {
+        padding-top: 30px;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .img_right img {
+        width: 500px;
+    }
+    .navi ul {
+        display: none;
+    }
+    p {
+        padding: 10px 0px;
+        line-height: 20px
+    }
+    .f1 {
+        font-size: 10px;
+    }
+    .f2 {
+        font-size: 15px;
+    }
+    .f3 {
+        font-size: 20px;
+    }
+    .f4 {
+        font-size: 35px;
+    }
+    blockquote:before {
+        content: "\201C";
+        position: right;
+        font-size: 40px;
+    }
+    blockquote:after {
+        content: "\201D";
+        position: left;
+        font-size: 40px;
+    }
+    .modal-footer {
+        padding: 0px 10px;
+    }
+    .modal-body {
+        padding: 20px;
+    }
+    .btn_new {
+        line-height: 24px;
+        padding: 8px 24px;
+    }
+    .animated {
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    .footer_copy,
+    .footer_links {
+        float: none;
+        text-align: center;
+    }
+    .footer_links {
+      padding-top: 20px;
+    }
+}
+/*-------------------- rtl*/
+.ar_l {
+  float: left !important;
+  text-align: left;
+}
+.ar_r {
+  float: right !important;
+  text-align: right!important;
+
+}
+.ar_tr {
+  text-align: right!important;
+
+}
+.ar_tc {
+  text-align: center;
+}
+.ar_footer_copy {
+    float: right;
+}
+.ar_social_icons li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.ar_footer_links {
+    float: left;
+}
+.ar_blockquote blockquote:before {
+    content: "\201D";
+    position: left;
+    font-size: 40px;
+}
+.ar_blockquote blockquote:after {
+  content: "\201C";
+  position: right;
+  font-size: 40px;
+}
+.en_fonts {
+  font-family: Raleway, sans-serif !important;
+}
